@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Hub Servers</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #0056b3; }
+        ul { list-style: none; padding: 0; }
+        li { background: #e9ecef; margin-bottom: 10px; padding: 10px 15px; border-radius: 5px; display: flex; justify-content: space-between; align-items: center; }
+        li a { text-decoration: none; color: #007bff; font-weight: bold; }
+        li a:hover { text-decoration: underline; }
+        .error { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MCP Hub Servers</h1>
+        {% if error %}
+            <p class="error">Error: {{ error }}</p>
+        {% endif %}
+        {% if servers %}
+            <ul>
+                {% for server in servers %}
+                    <li>
+                        <a href="{{ server.url }}" target="_blank">{{ server.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No MCP servers found or an error occurred.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
