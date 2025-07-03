@@ -19,11 +19,13 @@
 
 ## 0. 개발 및 기여 워크플로우 (Development & Contribution Workflow)
 
-0.1. **브랜치 전략:** 현재 작업과 **성격이 다른 새로운 작업을 시작할 때**는, `BRANCH_CONVENTION.md`에 정의된 네이밍 규칙에 따라 새로운 브랜치를 생성하여 작업을 분리한다.
+0.1. **이슈 생성:** 모든 작업은 시작 전 `ISSUE_CONVENTION.md`에 따라 이슈를 생성하는 것을 원칙으로 한다.
 
-0.2. **커밋 메시지:** 모든 커밋은 `Conventional Commits` 표준을 따른다. 커밋 메시지 작성 시, `COMMIT_CONVENTION.md`을 참고하여 프로젝트 루트의 `.gitmessage` 템플릿을 사용해야 한다.
+0.2. **브랜치 전략:** 현재 작업과 **성격이 다른 새로운 작업을 시작할 때**는, `BRANCH_CONVENTION.md`에 정의된 네이밍 규칙에 따라 새로운 브랜치를 생성하여 작업을 분리한다.
 
-0.3. **Pull Request (PR):** 기능 개발 완료 후 `main` 브랜치로의 병합은 Pull Request를 통해서만 이루어진다. PR 제목과 내용은 `PR_CONVENTION.md`와 `.github/PULL_REQUEST_TEMPLATE.md`를 따른다.
+0.3. **커밋 메시지:** 모든 커밋은 `Conventional Commits` 표준을 따른다. 커밋 메시지 작성 시, `COMMIT_CONVENTION.md`을 참고하여 프로젝트 루트의 `.gitmessage` 템플릿을 사용해야 한다.
+
+0.4. **Pull Request (PR):** 기능 개발 완료 후 `main` 브랜치로의 병합은 Pull Request를 통해서만 이루어진다. PR 제목과 내용은 `PR_CONVENTION.md`와 `.github/PULL_REQUEST_TEMPLATE.md`를 따른다.
 
 ## 1. 타입 및 데이터 무결성 (Type & Data Integrity)
 
