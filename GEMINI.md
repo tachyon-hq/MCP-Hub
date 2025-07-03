@@ -25,7 +25,7 @@
 
 0.3. **커밋 메시지:** 모든 커밋은 `Conventional Commits` 표준을 따른다. 커밋 메시지 작성 시, `COMMIT_CONVENTION.md`을 참고하여 프로젝트 루트의 `.gitmessage` 템플릿을 사용해야 한다.
 
-0.4. **Pull Request (PR):** 기능 개발 완료 후 `main` 브랜치로의 병합은 Pull Request를 통해서만 이루어진다. PR 제목과 내용은 `PR_CONVENTION.md`와 `.github/PULL_REQUEST_TEMPLATE.md`를 따른다.
+0.4. **Pull Request (PR):** 기능 개발 완료 후 `main` 브랜치로의 병합은 Pull Request를 통해서만 이루어진다. PR 제목과 내용은 `PR_CONVENTION.md`와 `.github/PULL_REQUEST_TEMPLATE.md`를 따르며, 관련 이슈를 자동으로 닫기 위해 PR 본문에 `Closes #이슈번호`를 명시한다.
 
 ## 1. 타입 및 데이터 무결성 (Type & Data Integrity)
 
